@@ -1,6 +1,6 @@
 # Project Setup
 
-## Backend (Flask for connectivity)
+## Backend 
 
 1. **Install Dependencies:**
    Make sure you have Python and Flask installed. Install the required packages by running:
@@ -13,7 +13,7 @@
 3. **To run frontend:**
    ```
       npm start
-## Frontend (For User Interface)
+## Frontend 
    The frontend for this application is built on top of react , Intially we are getting video input from user and sending the video to the backend server where flask is used for api connectivity .
 
 ## Description of Working
