@@ -1,0 +1,6 @@
+A Proto-type model still under devoplment
+for backend 
+cmd : flask run
+
+for frontend 
+cmd: npm start
