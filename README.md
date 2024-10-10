@@ -17,7 +17,7 @@
 ## Frontend (For User Interface)
    The frontend for this application is built on top of react , Intially we are getting video input from user and sending the video to the backend server where flask is used for api connectivity .
 
-# Description of Working
+## Description of Working
   1. First we get the video and the video is send to backend by POST request (flask).The video is wrapped in a special object called FormData, which allows the file to be sent via HTTP.
   2. Once Flask gets the video, it saves it on the server (in the uploads/ folder) .
   3. After the video is saved, it is passed to the object detection model (YOLOv8).
