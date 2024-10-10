@@ -1,0 +1,169 @@
+/* General Layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121e36;  /* Dark background for entire layout */
+    color: white;  /* White text on dark background */
+  }
+  
+  /* Layout container */
+  .layout {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 150px;  
+    background-color: #1a3a6b;  /* Dark blue for sidebar */
+    color: white;
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+  }
+  
+  .sidebar.closed {
+    width: 50px;  /* Sidebar width when closed */
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: center;  /* Center the icon */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Sidebar toggle button */
+  .sidebar-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 2em; 
+  }
+  
+  /* Uploaded file style */
+  .uploaded-file {
+    background-color: #1f6fa9;  /* Distinct blue for uploaded file */
+    padding: 5px;  
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Shrink behavior */
+  .sidebar.closed .uploaded-file,
+  .sidebar.closed .sidebar-content {
+    display: none;  
+  }
+  
+  /* Main Content Area */
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;  /* Evenly distribute upload and output sections */
+    padding: 20px;
+    height: calc(100vh - 40px);  /* Adjust height minus padding */
+  }
+  
+  /* Upload and Output sections */
+  .upload-section,
+  .output-section {
+    width: 47%; 
+    height: 100%;
+    background-color: #2a527a;  /* Darker blue for main sections */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  }
+  .output-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    color: white; 
+  }
+  
+  /* Upload Button Styles */
+  .upload-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1f6fa9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-button:hover {
+    background-color: #144d7a;
+  }
+  
+  /* Download Button Styles */
+  .download-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1f6fa9; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .download-button:hover {
+    background-color: #144d7a;
+  }
+  
+  /* File Input */
+  .file-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  /* Download Section */
+  .download-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .layout {
+      flex-direction: column;
+    }
+  
+    .main-content {
+      flex-direction: column;
+    }
+  
+    .upload-section,
+    .output-section {
+      width: 100%;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
