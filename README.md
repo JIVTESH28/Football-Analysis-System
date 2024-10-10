@@ -13,7 +13,6 @@
 3. **To run frontend:**
    ```
       npm start
-
 ## Frontend (For User Interface)
    The frontend for this application is built on top of react , Intially we are getting video input from user and sending the video to the backend server where flask is used for api connectivity .
 
