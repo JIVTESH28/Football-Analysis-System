@@ -8,7 +8,8 @@
    ```bash
    pip install -r requirements.txt
 2.To run backend 
-  flash run
+   
+      flash run
 
 ## Frontend (For User Interface)
    The frontend for this application is built on top of react , Intially we are getting video input from user and sending the video to the backend server where flask is used for api connectivity 
